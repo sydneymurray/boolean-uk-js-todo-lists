@@ -15,12 +15,18 @@ for (const user of users) {
 alert(userDetails)
 
 inputId = prompt("What is your user ID?")
+let userName =""
+for (const name of users) {
+  if (Number(inputId)===name.id)
+    userName=name.name    
+}
+
 let toBeDone = ""
 for (const activity of todos) {
   if (activity.userId===Number(inputId))
     toBeDone += activity.title + "\n"      
 }
-alert(`You have the following titles to read \n${toBeDone}`)
+alert(`${userName}, you have the following titles to read \n${toBeDone}:`)
 
 
 
