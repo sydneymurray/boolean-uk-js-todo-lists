@@ -22,5 +22,5 @@ for (const activity of todos) {
 }
 alert(`You have the following titles to read \n${toBeDone}`)
 
-// alert(users[1]["name"])
+
 
